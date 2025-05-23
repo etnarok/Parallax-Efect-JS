@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+body{
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    background-color: #210002;
+    font-size: 15px;
+}
+
+.parallax{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+
+.parallax .bg-1{
+    background-image: url(img/0.png);
+}
+.parallax .bg-2{
+    background-image: url(img/1.png);
+}
+.parallax .bg-3{
+    background-image: url(img/2.png);
+}
+.parallax .bg-4{
+    background-image: url(img/3.png);
+}
+.parallax .bg-5{
+    background-image: url(img/4.png);
+}
+.parallax .bg-6{
+    background-image: url(img/5.png);
+}
+.parallax .bg-7{
+    background-image: url(img/6.png);
+}
+.parallax .bg-8{
+    background-image: url(img/7.png);
+}
+.parallax .bg-9{
+    background-image: url(img/8.png);
+}
+
+.parallax h1{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 15rem;
+    font-family: "Lacquer", serif;
+    color: #fff;
+}
+
+.intro{
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro img{
+    max-width: 130px;
+    max-height: 130px;
+    border-radius: 50%;
+}
+
+.intro .btn{
+    background-color: #fd0003;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%
+}
+
+.anim-show{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.active .anim-show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.anim-show:nth-child(2){
+    transition-delay: 0.3s;
+}
+
+
+.anim-show:nth-child(3){
+    transition-delay: 0.6s;
+}
+
+
+.anim-show:nth-child(4){
+    transition-delay: 0.9s;
+}
+
+@media screen and (max-width: 768px) {
+    .parallax h1{
+        font-size: 5rem;
+        top: 45%;
+    }
+    
+    p{
+        padding: 2rem;
+    }
+}
